@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>進階部落格 CMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 我的部落格 CMS</h1>
+
+    <!-- 分類管理 -->
+    <div class="category-section">
+      <h2>📂 分類管理</h2>
+      <div class="category-controls">
+        <input type="text" id="newCategoryInput" placeholder="新增分類名稱">
+        <button id="addCategoryBtn">➕ 新增分類</button>
+      </div>
+      <div id="categoryList"></div>
+    </div>
+
+    <!-- 文章編輯區 -->
+    <div class="editor">
+      <h2>✍️ 編輯文章</h2>
+      <input type="text" id="titleInput" placeholder="文章標題">
+      <textarea id="contentInput" placeholder="輸入文章內容..."></textarea>
+      <div class="editor-controls">
+        <select id="categorySelect"></select>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="saveBtn">儲存文章</button>
+      </div>
+    </div>
+
+    <!-- 文章列表 -->
+    <h2>📚 文章列表</h2>
+    <div id="postList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
